@@ -1,0 +1,121 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Grid</title>
+    <style type="text/css">
+        .one {
+            grid-area: header;
+        }
+
+        .two {
+            grid-area: left;
+        }
+
+        .three {
+            grid-area: center;
+        }
+
+        .four {
+            grid-area: right;
+        }
+
+        .five {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+                'left center center center right right'
+                'left footer footer footer footer footer';
+            gap: 50px;
+            padding: 20px;
+
+        }
+
+        .grid-container>div {
+            background-color: yellow;
+            text-align: centre;
+            font-size: 50px;
+            padding: 40px 30px;
+
+
+        }
+    </style>
+</head>
+
+<body style="color:tomato;">
+    <h1>SUNFUN.COM</h1>
+    <P style="font-size: 30px; background-color:honeydew;">Sunil kumar mehta</P>
+    <div class="grid-container">
+        <div class="one">Header </div>
+        <div class="two">left</div>
+        <div class="three">Center</div>
+        <div class="four">Right</div>
+        <div class="five">Footer</div>
+    </div>
+    <html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Signup</title>
+    </head>
+
+    <body bgcolor="grey">
+        <form>
+            <div>
+                <h1><b>Sign up form</b></h1>
+                <label><b>Name</b></label>
+                <input type="Name" placeholder="Enter your name" required=""><br>
+                <label><b>Email</b></label>
+                <input type="text" placeholder="Enter ur Email" name="email" required=""><br>
+                <label><b>Password</b></label>
+                <input type="Password" placeholder="Enter your password"><br>
+                <label><b>Re-enter</b></label>
+                <input type="Password" placeholder="Re-enter your password"><br>
+                <label><input type="checkbox" checked="checked" name="remember">Remember Me</label><br>
+                <input type="radio" <p=" ">I agree to terms &amp; conditions mentionedd in <a
+                    href="file:///C:/Users/sushe/OneDrive/Documents/BOOTSTRAP.HTML#">Terms and Privacy</a>
+                <p></p>
+                <div>
+                    <button>cancel</button>
+                    <button>Signup</button>
+                </div>
+            </div>
+        </form>
+        <form> 
+            Email:<input type="text" id="email"><br>
+            Passwar:<input type="password" id="password"><br>
+            <button type="button" id="btn">..Login..</button>
+    
+        </form>
+    
+    
+        <script>
+            var emailEntered = document.getElementById('email');
+            var passEntered = document.getElementById('password');
+            var button = document.getElementById('btn');
+    
+            button.addEventListener("click",function(){
+                var email = emailEntered.value;
+                var pass = passEntered.value;
+                var correctEmail = "12345";
+                var correctPass = "sun";
+    
+                if (email === correctEmail && pass === correctPass){
+                    window.open("NEW calculator.html");
+                }
+                else{
+                    alert("wrong password")
+                }
+    
+            });
+        </script>
+
+    </body>
+
+    </html>
+</body>
+
+</html>
